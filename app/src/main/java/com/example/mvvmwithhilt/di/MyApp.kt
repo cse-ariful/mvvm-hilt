@@ -1,4 +1,4 @@
-package com.example.mvvmwithhilt.DI
+package com.example.mvvmwithhilt.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
