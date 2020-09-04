@@ -1,10 +1,40 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="cardTitleStyle">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="cardSubTitleStyle">
+
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="eventTitle">
+    <item name="android:textSize">18dp</item>
+        <item name="android:text">This is tite</item>
+    </style>
+
+    <style name="smallHintSubtitle">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="contentText">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="highlightEnable" format="boolean"/>
+        <attr name="highlightColor" format="color"/>
+    </declare-styleable>
 
 </resources>

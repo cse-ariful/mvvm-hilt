@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mLayoutBackground" format="reference|color"/>
+    <attr name="mTextColor" format="reference|color"/>
+    <attr name="mCardBackground" format="reference|color"/>
+    <attr name="mIcontint" format="reference|color"/>
+    <attr name="mColor1" format="color"/>
+    <attr name="mColor2" format="color"/>
+    <attr name="mColor3" format="color"/>
+
+</resources>

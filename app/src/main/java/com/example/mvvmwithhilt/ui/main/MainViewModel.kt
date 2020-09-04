@@ -12,7 +12,8 @@ class MainViewModel @ViewModelInject constructor(private val useCase: DataUseCas
     fun getRepositoriesList(): LiveData<ResultData<GithubRepoModel>> {
        return  liveData<ResultData<GithubRepoModel>> {
             emit(ResultData.Loading())
-            emit(useCase.getRepositoryLists())
+           // TODO: 8/28/2020 uncomment this
+           // emit(useCase.getRepositoryLists())
         }
     }
 
