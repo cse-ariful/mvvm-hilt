@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="cardTitleStyle">
@@ -17,7 +19,7 @@
     </style>
 
     <style name="eventTitle">
-    <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18dp</item>
         <item name="android:text">This is tite</item>
     </style>
 
@@ -29,6 +31,37 @@
         <item name="android:textSize">14dp</item>
     </style>
 
+    <style name="titleStyle" parent="TextAppearance.MaterialComponents.Headline6">
+
+    </style>
+
+    <style name="subttitleStyle" parent="TextAppearance.MaterialComponents.Subtitle1">
+
+    </style>
+
+    <style name="otpEditTextStyle">
+        <item name="singleLine">true</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+
+    <style name="spinnerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:background">@drawable/custom_spinner_background</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="inputFieldStyle">
+        <item name="background">@drawable/edittext_bg</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="height">35dp</item>
+    </style>
 
     <declare-styleable name="CircleImageView">
         <attr name="strokeColor" format="color"/>
@@ -36,5 +69,6 @@
         <attr name="highlightEnable" format="boolean"/>
         <attr name="highlightColor" format="color"/>
     </declare-styleable>
+
 
 </resources>

@@ -41,7 +41,7 @@
         <View
             android:background="@color/shimmerColor"
             android:id="@+id/eventMoreBtn"
-            android:padding="@dimen/margin_6dp"
+            android:padding="6dp"
             android:src="@drawable/ic_baseline_more_horiz_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -87,7 +87,7 @@
             android:layout_height="60dp"/>
         <View
             android:layout_marginTop="6dp"
-            android:layout_marginRight="@dimen/margin_6dp"
+            android:layout_marginRight="6dp"
             android:background="@color/shimmerColor"
             android:id="@+id/eventImages"
             app:layout_constraintStart_toEndOf="@id/leftGuide"

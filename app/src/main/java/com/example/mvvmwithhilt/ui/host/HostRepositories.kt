@@ -1,4 +1,4 @@
-package com.example.mvvmwithhilt.ui.Attendance
+package com.example.mvvmwithhilt.ui.host
 
 import android.net.wifi.p2p.WifiP2pManager
 import android.util.Log

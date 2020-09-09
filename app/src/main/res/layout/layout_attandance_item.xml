@@ -46,7 +46,7 @@
             app:layout_constraintTop_toBottomOf="@id/sid" />
 
         <TextView
-            android:layout_marginEnd="@dimen/margin_6dp"
+            android:layout_marginEnd="6dp"
             android:id="@+id/btnAccept"
             android:background="@drawable/rectangle"
             android:paddingHorizontal="8dp"

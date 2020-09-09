@@ -13,4 +13,21 @@
     <string name="menu">Menu</string>
     <string name="account">account</string>
     <string name="notification">notification</string>
+    <string name="enable">enable</string>
+    <string name="hotspot">Hotspot</string>
+    <string name="hotspot_disable_hint">Hotspot is not enable\nClick here to enable now</string>
+    <string name="server_disable_hint">Web server not activated\nClick here to start</string>
+    <string name="web_submission">web server</string>
+    <string name="new_course">new course</string>
+    <string name="your_courses">Your Courses</string>
+    <string name="students">Students</string>
+    <string name="title_activity_student_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="assignments">Assignments</string>
+    <string name="login">login</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="register">Register</string>
 </resources>

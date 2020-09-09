@@ -3,6 +3,7 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.example.mvvmwithhilt.R
+import com.example.mvvmwithhilt.common.genericRecyclerAdapter.GenericModel
 import com.google.gson.annotations.SerializedName
 
 
@@ -23,7 +24,10 @@ data class PostModel(
     var upVotes: Int,
     @SerializedName("time")
     var eventTime: String
-)
+): GenericModel(){}
+
+
+
 @BindingAdapter("imageUrl")
 fun loadImage(view: ImageView, urls: List<String>)   {
     urls.let {

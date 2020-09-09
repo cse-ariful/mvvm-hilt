@@ -1,15 +1,21 @@
-package com.example.mvvmwithhilt.ui.Attendance
+package com.example.mvvmwithhilt.ui.host
 
 import android.content.Context
 import android.net.wifi.WifiManager
 import android.util.Log
+import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.bumptech.glide.Glide
 import com.example.mvvmwithhilt.AssetProvider
+import com.example.mvvmwithhilt.Courotines
+import com.example.mvvmwithhilt.R
 import com.example.mvvmwithhilt.localserver.IpResolver
 import com.example.mvvmwithhilt.localserver.WebServerManager
 import com.example.mvvmwithhilt.model.AttendanceModel
+import com.example.mvvmwithhilt.utility.Const
 import fi.iki.elonen.NanoHTTPD
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -46,23 +52,28 @@ public class HostViewModel @ViewModelInject constructor(assetProvider: AssetProv
         }
     }
 
-    suspend fun toggleLocalServer(context: Context){
-        withContext(Dispatchers.IO){
-            ipAddress = IpResolver.getIPAddress(true)
-            if(webServer==null){
-                webServer =  WebServerManager(ipAddress,8080);
-            }
-            webServer?.let {
-                if(it.isAlive){
-                    it.closeAllConnections()
-                    it.stop()
-                    it.listener=null;
-                }else{
-                    it.listener=this@HostViewModel
-                    it.start()
+      fun toggleLocalServer(){
+        Courotines.ioThenMain(
+            {
+                ipAddress = IpResolver.getIPAddress(true)
+                if(webServer==null){
+                    webServer =  WebServerManager(ipAddress,Const.LOCAL_SERVER_PORT);
                 }
+                webServer?.let {
+                    if(it.isAlive){
+                        it.closeAllConnections()
+                        it.stop()
+                        it.listener=null;
+                    }else{
+                        it.listener=this@HostViewModel
+                        it.start()
+                    }
+                }
+            },
+            {
+                //if any value returned this will be from here
             }
-        }
+        )
 
     }
 
@@ -114,7 +125,21 @@ public class HostViewModel @ViewModelInject constructor(assetProvider: AssetProv
         return errorString.replace("ERROR_MESSAGE",message)
     }
 
+    override fun onCleared() {
+        super.onCleared()
+        if(webServer!=null && webServer!!.isAlive){
+            webServer!!.stop()
+        }
+    }
+
     companion object{
         final val TAG = "HOSTVIEWMODEL";
+    }
+}
+@BindingAdapter("imageUrl")
+fun loadImage(view: ImageView, running: Boolean)   {
+    Log.d("ariful", "loadImage() called with: view = $view, running = $running")
+    running.let {
+        if(running) Glide.with(view.context).load(R.drawable.loading).placeholder(R.drawable.loading).into(view)
     }
 }

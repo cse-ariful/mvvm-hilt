@@ -1,4 +1,4 @@
-package com.example.mvvmwithhilt.ui.Attendance
+package com.example.mvvmwithhilt.ui.host
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -83,6 +83,7 @@
     <color name="dark_colorTranslucent">#b000</color>
     <color name="dark_contentShowingBackground">#616161</color>
     <color name="shimmerColor">#E1DFDF</color>
+    <color name="url_color">#333E78</color>
 
 
 </resources>
