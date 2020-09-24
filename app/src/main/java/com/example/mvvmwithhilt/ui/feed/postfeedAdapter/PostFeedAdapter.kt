@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvmwithhilt.R
 import com.example.mvvmwithhilt.databinding.PostItemLayoutBinding
-import com.example.mvvmwithhilt.models.PostModel
+import com.example.mvvmwithhilt.model.PostModel
 
 class PostFeedAdapter(val postItems:List<PostModel>): RecyclerView.Adapter<ViewHolder>() {
 

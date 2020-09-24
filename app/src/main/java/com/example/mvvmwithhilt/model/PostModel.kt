@@ -1,4 +1,4 @@
-package com.example.mvvmwithhilt.models
+package com.example.mvvmwithhilt.model
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide

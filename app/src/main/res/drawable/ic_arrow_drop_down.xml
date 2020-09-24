@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. This file is created by Ariful Jannat Arif at 9/9/20 8:05 PM
+  ~ please Dont modify this file unless prior permission from owner
+  ~
+  ~ Ariful Jannat Arif
+  ~ software engineer at inverseai.com
+  ~ cse.ariful@gmail.com
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+    <path
+        android:fillColor="@color/colorAccent"
+        android:pathData="M7,10l5,5 5,-5z"/>
+</vector>

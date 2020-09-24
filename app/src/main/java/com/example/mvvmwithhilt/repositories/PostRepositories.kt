@@ -1,7 +1,7 @@
 package com.example.mvvmwithhilt.repositories
 
 import com.example.mvvmwithhilt.model.CourseModel
-import com.example.mvvmwithhilt.models.PostModel
+import com.example.mvvmwithhilt.model.PostModel
 import kotlinx.coroutines.delay
 import java.util.logging.Handler
 

@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mvvmwithhilt.Courotines
-import com.example.mvvmwithhilt.models.PostModel
+import com.example.mvvmwithhilt.model.PostModel
 import com.example.mvvmwithhilt.repositories.PostRepositories
 import kotlinx.coroutines.Job
 import javax.inject.Inject
@@ -22,7 +22,7 @@ class PostFeedViewModel @ViewModelInject constructor(val postRepo:PostRepositori
                 loadingPost.postValue(true)
                 postRepo.getPosts()
             },{
-                _posts.value=it;
+                _posts.value=it
                 loadingPost.postValue(false)
             }
         )

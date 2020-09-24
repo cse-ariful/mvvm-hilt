@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmwithhilt.R
 import com.example.mvvmwithhilt.common.genericRecyclerAdapter.GenericAdapter
 import com.example.mvvmwithhilt.databinding.PostFeedFragmentBinding
-import com.example.mvvmwithhilt.models.PostModel
+import com.example.mvvmwithhilt.model.PostModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

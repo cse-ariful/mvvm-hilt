@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. This file is created by Ariful Jannat Arif at 9/9/20 8:05 PM
+  ~ please Dont modify this file unless prior permission from owner
+  ~
+  ~ Ariful Jannat Arif
+  ~ software engineer at inverseai.com
+  ~ cse.ariful@gmail.com
+  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/ic_arrow_up_coloured" android:gravity="right"
+                android:bottom="@dimen/defaultMargin"/>
+            <item android:drawable="@drawable/ic_arrow_drop_down" android:gravity="right"
+                android:top="@dimen/defaultMargin"/>
+        </layer-list>
+    </item>
+</selector>

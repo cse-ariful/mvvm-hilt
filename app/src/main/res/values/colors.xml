@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#6200EE</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#002B49</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="off_white">#FDFBFB</color>
@@ -84,6 +84,7 @@
     <color name="dark_contentShowingBackground">#616161</color>
     <color name="shimmerColor">#E1DFDF</color>
     <color name="url_color">#333E78</color>
+    <color name="input_bottom_color">#838383</color>
 
 
 </resources>

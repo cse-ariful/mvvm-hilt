@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/olive"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_outline_cancel_24" android:gravity="center">
+    </item>
+</layer-list>

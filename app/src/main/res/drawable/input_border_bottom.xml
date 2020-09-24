@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. This file is created by Ariful Jannat Arif at 9/10/20 7:17 PM
+  ~ please Dont modify this file unless prior permission from owner
+  ~
+  ~ Ariful Jannat Arif
+  ~ software engineer at inverseai.com
+  ~ cse.ariful@gmail.com
+  -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:bottom="1dp"
+        android:left="-2dp"
+        android:right="-2dp"
+        android:top="-2dp">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/input_bottom_color" />
+
+            <padding android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+
+</layer-list>

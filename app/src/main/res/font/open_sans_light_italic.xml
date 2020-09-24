@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. This file is created by Ariful Jannat Arif at 9/10/20 6:45 PM
+  ~ please Dont modify this file unless prior permission from owner
+  ~
+  ~ Ariful Jannat Arif
+  ~ software engineer at inverseai.com
+  ~ cse.ariful@gmail.com
+  -->
+
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fontProviderAuthority="com.google.android.gms.fonts"
+        app:fontProviderPackage="com.google.android.gms"
+        app:fontProviderQuery="name=Open Sans&amp;weight=300&amp;italic=1"
+        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>

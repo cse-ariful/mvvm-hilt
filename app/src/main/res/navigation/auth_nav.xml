@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. This file is created by Ariful Jannat Arif at 9/6/20 7:21 PM
+  ~ please Dont modify this file unless prior permission from owner
+  ~
+  ~ Ariful Jannat Arif
+  ~ software engineer at inverseai.com
+  ~ cse.ariful@gmail.com
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/auth_nav.xml"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.mvvmwithhilt.screens.login.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/to_register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.mvvmwithhilt.screens.register.Register"
+        android:label="Register" >
+        <action
+            android:id="@+id/to_login"
+            app:destination="@id/login" />
+    </fragment>
+</navigation>

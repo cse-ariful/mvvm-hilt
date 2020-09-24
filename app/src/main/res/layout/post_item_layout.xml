@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="item"
-            type="com.example.mvvmwithhilt.models.PostModel" />
+            type="com.example.mvvmwithhilt.model.PostModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

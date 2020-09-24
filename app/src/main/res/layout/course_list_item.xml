@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.mvvmwithhilt.model.CourseModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:clickable="true"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintDimensionRatio="2:1"
+                android:layout_width="match_parent"
+                android:background="@{item.adapterPosition%2==0?@color/purple:@color/olive}"
+                android:layout_height="0dp">
+                <ImageButton
+                    android:padding="@dimen/default_margin_large"
+                    android:background="?selectableItemBackground"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_outline_more_vert_24"
+                    android:id="@+id/options"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/courseTitle"
+                    android:textColor="@color/white"
+                    style="@style/titleStyle"
+                    android:layout_marginRight="@dimen/default_margin"
+                    app:layout_constraintEnd_toStartOf="@id/options"
+                    android:layout_margin="@dimen/default_margin_large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@{item.title}"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    style="@style/subttitleStyle"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="@id/courseTitle"
+                    app:layout_constraintTop_toBottomOf="@id/courseTitle"
+                    android:text="@{item.semester}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_margin="@dimen/default_margin"
+                    android:textColor="@color/white"
+                    android:text='@{item.creator,default="Tamann alaom"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

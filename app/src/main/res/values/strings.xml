@@ -30,4 +30,51 @@
     <string name="login">login</string>
     <string name="forgot_password">forgot password</string>
     <string name="register">Register</string>
+
+
+
+
+
+
+
+
+
+
+    <string name="multicolor">
+        <font fgcolor="#92929d">By signing up, you confirm that you’ve read\nand accepted our</font>
+        <font fgcolor="#0062ff">User Notice</font>
+        <font fgcolor="#92929d">and</font>
+        <font fgcolor="#0062ff">Privacy Policy.</font>
+    </string>
+    <string name="policy">
+        <font fgcolor="#696974">I agree to Square’s </font>
+        <font fgcolor="#ff2e63">Cookie</font>
+        <font fgcolor="#696974">and</font>
+        <font fgcolor="#50b5ff">Privacy Policy.</font>
+    </string>
+
+    <string name="register_hint">
+        <font fgcolor="#696974">Don\'t have an account? </font>
+        <font fgcolor="#ff2e63">Sign up</font>
+    </string>
+    <string name="login_hint"> Already have an account?</string>
+    <string name="terms_and_condition">
+        <font fgcolor="#92929d">By clicking "Get Started - Free!"\nI agree to Square’s <u>Terms of Service</u></font>
+    </string>
+    <string name="sign_up_to_your_account">Sign Up to your account</string>
+    <string name="enter_mobile_hint">Please enter your mobile no\nwe will send a verification code</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="continue_txt">continue</string>
+    <string name="verification_wait_msg">Please wait we are sending a verification sms to your number</string>
+    <string name="verify">verify</string>
+    <string name="resend">resend %s</string>
+    <string name="retry">retry</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="id_no">ID No</string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_up">Sign up</string>
+
 </resources>
